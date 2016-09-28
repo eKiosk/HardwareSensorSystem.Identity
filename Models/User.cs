@@ -28,7 +28,7 @@ namespace HardwareSensorSystem.Identity.Models
         public string PasswordHash { get; set; }
 
         /// <summary>
-        /// Gets or sets the usergroup for this user.
+        /// Gets or sets the primary key of the usergroup that the user belongs to.
         /// </summary>
         public int UserGroupId { get; set; }
 
