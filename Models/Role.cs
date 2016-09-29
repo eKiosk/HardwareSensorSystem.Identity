@@ -18,13 +18,8 @@ namespace HardwareSensorSystem.Identity.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Navigation property for the users in this role.
+        /// Navigation property for the roleusergroups in this role.
         /// </summary>
-        public List<User> Users { get; set; }
-
-        /// <summary>
-        /// Navigation property for the usergroups in this role.
-        /// </summary>
-        public List<UserGroup> UserGroups { get; set; }
+        public List<RoleUserGroup> RoleUserGroups { get; set; }
     }
 }

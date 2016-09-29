@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace HardwareSensorSystem.Identity.Models
+﻿namespace HardwareSensorSystem.Identity.Models
 {
     /// <summary>
     /// Represents a user in the identity system.
@@ -36,11 +34,6 @@ namespace HardwareSensorSystem.Identity.Models
         /// Navigation property for the usergroup this user belongs to.
         /// </summary>
         public UserGroup UserGroup { get; set; }
-
-        /// <summary>
-        /// Navigation property for the roles this user belongs to.
-        /// </summary>
-        public List<Role> Roles { get; set; }
 
         /// <summary>
         /// A random value that change whenever a user is inserted or updated.

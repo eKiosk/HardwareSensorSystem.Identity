@@ -18,14 +18,9 @@ namespace HardwareSensorSystem.Identity.Models
         public string Name { get; set; }
 
         /// <summary>
-        /// Navigation property for the roles this usergroup belongs to.
+        /// Navigation property for the roleusergroups in this usergroup.
         /// </summary>
-        public List<Role> Roles { get; set; }
-
-        /// <summary>
-        /// Navigation property for the users in this usergroup.
-        /// </summary>
-        public List<User> Users { get; set; }
+        public List<RoleUserGroup> RoleUserGroups { get; set; }
 
         /// <summary>
         /// A random value that change whenever a usergroup is inserted or updated.
