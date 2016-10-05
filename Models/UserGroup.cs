@@ -20,7 +20,7 @@ namespace HardwareSensorSystem.Identity.Models
         /// <summary>
         /// Navigation property for the roleusergroups in this usergroup.
         /// </summary>
-        public List<RoleUserGroup> RoleUserGroups { get; set; }
+        public ICollection<RoleUserGroup> RoleUserGroups { get; set; }
 
         /// <summary>
         /// A random value that change whenever a usergroup is inserted or updated.

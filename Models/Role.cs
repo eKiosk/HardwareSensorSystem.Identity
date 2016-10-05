@@ -20,6 +20,6 @@ namespace HardwareSensorSystem.Identity.Models
         /// <summary>
         /// Navigation property for the roleusergroups in this role.
         /// </summary>
-        public List<RoleUserGroup> RoleUserGroups { get; set; }
+        public ICollection<RoleUserGroup> RoleUserGroups { get; set; }
     }
 }
