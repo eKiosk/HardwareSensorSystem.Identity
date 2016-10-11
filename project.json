@@ -2,10 +2,12 @@
   "version": "1.0.0-*",
 
   "dependencies": {
+    "AspNet.Security.OAuth.Validation": "1.0.0-alpha2-final",
     "Microsoft.AspNetCore.Identity": "1.0.0",
     "Microsoft.EntityFrameworkCore": "1.0.1",
-    "Microsoft.EntityFrameworkCore.Relational": "1.0.1",
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "1.6.0",
+    "OpenIddict": "1.0.0-*",
+    "OpenIddict.Mvc": "1.0.0-*"
   },
 
   "frameworks": {
