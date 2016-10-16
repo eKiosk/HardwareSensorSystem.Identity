@@ -3,7 +3,10 @@
 
   "dependencies": {
     "AspNet.Security.OAuth.Validation": "1.0.0-alpha2-final",
+    "Microsoft.AspNetCore.Authentication": "1.0.0",
     "Microsoft.AspNetCore.Identity": "1.0.0",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.0.0",
+    "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.EntityFrameworkCore": "1.0.1",
     "NETStandard.Library": "1.6.0",
     "OpenIddict": "1.0.0-*",
