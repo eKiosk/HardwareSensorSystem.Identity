@@ -1,12 +1,13 @@
 ﻿using HardwareSensorSystem.Identity.Models;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Microsoft.AspNetCore.Builder
 {
     public static class IdentityBuilderExtensions
     {
-        public static void AddHssIdentity(this IServiceCollection services)
+        public static void AddHssIdentity(this IServiceCollection services, SecurityKey securityKey)
         {
             services.AddIdentity<User, Role>(config =>
             {
@@ -24,10 +25,10 @@ namespace Microsoft.AspNetCore.Builder
                 .SetRefreshTokenLifetime(TimeSpan.FromHours(1))
                 .UseJsonWebTokens()
                 .DisableHttpsRequirement()
-                .AddEphemeralSigningKey();
+                .AddSigningKey(securityKey);
         }
 
-        public static IApplicationBuilder UseHssIdentity(this IApplicationBuilder app)
+        public static IApplicationBuilder UseHssIdentity(this IApplicationBuilder app, SecurityKey securityKey)
         {
             return app.UseIdentity()
                       .UseOAuthValidation()

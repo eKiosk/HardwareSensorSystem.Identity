@@ -28,6 +28,7 @@ namespace HardwareSensorSystem.Identity.Controllers
 
         [AllowAnonymous]
         [HttpPost("token")]
+        [Consumes("application/x-www-form-urlencoded")]
         [Produces("application/json")]
         public async Task<IActionResult> CreateToken(OpenIdConnectRequest request)
         {

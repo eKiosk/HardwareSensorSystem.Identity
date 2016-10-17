@@ -8,6 +8,10 @@ namespace HardwareSensorSystem.Identity.Models
     /// </summary>
     public class IdentityContext : OpenIddictDbContext<User, Role, uint>
     {
+        public DbSet<UserGroup> UserGroups { get; set; }
+
+        public DbSet<UserGroupRole> UserGroupRoles { get; set; }
+
         /// <summary>
         /// Configures the schema needed for the identity system.
         /// </summary>
